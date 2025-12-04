@@ -1,0 +1,103 @@
+:root {
+  --ff-1: "Inter", sans-serif;
+
+  --fs: 14px;
+
+  --fw-1: 400;
+  --fw-2: 600;
+  --fw-3: 700;
+
+  --color-primary: hsl(75, 94%, 57%);
+  --color-base-100: hsl(0, 0%, 100%);
+  --color-base-200: hsl(0, 0%, 20%);
+  --color-base-300: hsl(0, 0%, 12%);
+  --color-base-400: hsl(0, 0%, 8%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: var(--color-base-400);
+  font-family: var(--ff-1);
+  padding: 24px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  background-color: var(--color-base-300);
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 56px;
+}
+
+img {
+  width: 20%;
+  margin-top: 24px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+button {
+  width: 60%;
+  padding: 16px;
+  border-radius: 10px;
+  font-family: var(--ff-1);
+  background-color: var(--color-base-200);
+  border: none;
+  color: var(--color-base-100);
+  font-weight: var(--fw-2);
+}
+button:hover {
+  background-color: var(--color-primary);
+  color: var(--color-base-400);
+}
+
+h1 {
+  margin-top: 24px;
+  margin-bottom: 5px;
+  font-weight: var(--fw-2);
+  font-size: 24px;
+  color: var(--color-base-100);
+}
+h3 {
+  color: var(--color-primary);
+  font-weight: var(--fw-2);
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+  color: var(--color-base-100);
+}
+
+h3,
+p,
+button {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 375px) {
+  main,
+  button {
+    width: 100%;
+  }
+  img {
+    width: 50%;
+    margin-top: 24px;
+  }
+}
